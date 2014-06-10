@@ -1,0 +1,40 @@
+.jq-Tree-Df i, .jq-Tree-Df span {
+    cursor: pointer;
+}
+
+.jq-Tree-Branch-Df {
+    font-weight: bold;
+}
+
+.jq-Tree-Leaf-Df {
+
+    
+}
+
+
+/*** animaciones ***/
+.jq-Hide {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.jq-Show {
+    max-height: 100%;
+    margin-bottom: 0.4em;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.jq-Fill-Left-in {
+    
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
