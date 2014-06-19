@@ -1,34 +1,144 @@
-﻿/**
-@ Autor : Yonatan Alexis Quintero Rodriguez
-@ Version: 0.1
-@ Fecha : 16 _ 03 _ 2014
-* clases de jquiro
-**/
+﻿/*!
+ * jQuiro JavaSctipt Framework 0.2
+ * Copyright 2014 YonaxTics, Inc.
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */ 
+
+ /* ========================================================================
+ * jQuiro 0.2 JavaSctipt Framework
+ * yonax73@gmail.com
+ * http://yonaxtics.hol.es/app-youshoop/php/ 
+ * ========================================================================
+ * Copyright 2014 yonaxTics, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ======================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ========================================================================
+ * Version 0.2 : 18 June 2014                                  
+ * Created on  : 16 March 2014                                
+ * Author      : Yonatan Alexis Quintero Rodriguez
+ * E-mail      : yonax73@gmail.com  
+ * Description : constants to control  styles css
+ * ======================================================================== */
 
 export class jqStyle {
 
-    /***CLASES PARA COMPONENTE TREE***/
+
+
+
+
+
+
+
+
+
+
+ /* ========================================================================
+  *  
+  *  tree component class
+  *
+  * ======================================================================== */
 
     static JQ_TREE_DF = 'jq-Tree-Df';
     static JQ_TREE_BRANCH_DF = 'jq-Tree-Branch-Df';
     static JQ_TREE_LEAF_DF = 'jq-Tree-Leaf-Df';
 
-    /******CLASES DE ANIMACIONES *******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ========================================================================
+  *  
+  *  animation class
+  *
+  * ======================================================================== */
 
     static JQ_HIDE = 'jq-Hide';
     static JQ_SHOW = 'jq-Show';
     static JQ_FILL_LEFT_IN = 'jq-Fill-Left-in';
 
+
+
+
+
+
 }
 
-/**
-@ Autor : Yonatan Alexis Quintero Rodriguez
-@ Version: 0.1
-@ Fecha : 16 _ 03 _ 2014
-* Lista de eventos javascript
-**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ========================================================================
+ * Version 0.2 : 18 June 2014                                  
+ * Created on  : 16 March 2014                                
+ * Author      : Yonatan Alexis Quintero Rodriguez
+ * E-mail      : yonax73@gmail.com  
+ * Description : events javascript constants
+ * ======================================================================== */
 
 export class jqEvent {
+
+
+
+
 
     static BLUR = 'blur';
     static CHANGE = 'change';
@@ -48,18 +158,75 @@ export class jqEvent {
     static SELECT = 'select';
     static SUBMIT = 'submit';
 
+
+
+
 }
-/**
-@ Autor : Yonatan Alexis Quintero Rodriguez
-@ Version: 0.1
-@ Fecha :12/03/2014
-* Observador de clases y eventos
-**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ========================================================================
+ * Version 0.2 : 18 June 2014                                  
+ * Created on  : 12 March 2014                                
+ * Author      : Yonatan Alexis Quintero Rodriguez
+ * E-mail      : yonax73@gmail.com  
+ * Description : observer to control id elements from DOM
+ * ======================================================================== */
 
 export class jqObserver {
 
+
+
+
+
     private static collectionClassName = new Array<string>();
     private static collectionClassKey = new Array<number>();
+
+
+
+
+
+
+
+
+
+
+
+  /* ========================================================================
+  *  
+  *  register new class jquiro
+  *  @param name: class name jquiro
+  *
+  * ======================================================================== */
 
     static registerClass(_name: string) {
 
@@ -78,6 +245,30 @@ export class jqObserver {
 
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ========================================================================
+  *  
+  *  create next serial to class jquiro
+  *  @param name: class name jquiro
+  *  @return number : next serial id
+  *
+  * ======================================================================== */
+
     static nextKey(_name: string): number {
 
         var _index = this.collectionClassName.indexOf(_name);
@@ -85,11 +276,59 @@ export class jqObserver {
         return this.collectionClassKey[_index];
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ========================================================================
+  *  
+  *  Free memory
+  *
+  * ======================================================================== */
+
     static finalize() {
 
         this.collectionClassKey = null;
         this.collectionClassName = null;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 /**
 @ Autor : Yonatan Alexis Quintero Rodriguez
